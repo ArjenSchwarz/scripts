@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "kind": "day-shape",
+  "date": "2026-10-02",
+  "weekday": "Friday",
+  "timezone": "Australia/Melbourne",
+  "generated_at": "2026-10-01T18:10:00+10:00",
+  "source": "Fantastical for events; Google Calendar for RSVP status",
+  "detail_policy": "categories_only",
+  "coverage": {
+    "exhaustive": false,
+    "note": "Some calendars and recurring events are deliberately excluded from this feed. A free window means nothing is scheduled that Arjen wants surfaced here \u2014 it is not a guarantee of an empty diary."
+  },
+  "rsvp_policy": {
+    "tentative": "Downgraded to optional_mantel.",
+    "needs_action": "Categorised as mantel_tbd \u2014 invited, not yet answered.",
+    "declined": "Dropped from the feed entirely; the time reads as free.",
+    "free_transparent": "Events marked as not blocking time are dropped."
+  },
+  "working_hours": {
+    "start": "09:00",
+    "end": "17:30"
+  },
+  "categories": {
+    "mantel": "Committed Mantel work time. Accepted, or no RSVP applies.",
+    "mantel_tbd": "Invited but not yet answered. Treat as unresolved \u2014 it may become a commitment or disappear.",
+    "optional_mantel": "Mantel-adjacent: informational, drop-in or community, or answered as maybe. Moveable and skippable.",
+    "personal": "Personal commitment. Unavailable. No further detail is published."
+  },
+  "blocks": [
+    {
+      "start": "15:00",
+      "end": "15:25",
+      "minutes": 25,
+      "category": "mantel",
+      "outside_working_hours": false
+    }
+  ],
+  "all_day": [],
+  "free_windows": [
+    {
+      "start": "09:00",
+      "end": "15:00",
+      "minutes": 360
+    },
+    {
+      "start": "15:25",
+      "end": "17:30",
+      "minutes": 125
+    }
+  ],
+  "totals_minutes": {
+    "whole_day": {
+      "mantel": 25,
+      "mantel_tbd": 0,
+      "optional_mantel": 0,
+      "personal": 0
+    },
+    "within_working_hours": {
+      "mantel": 25,
+      "mantel_tbd": 0,
+      "optional_mantel": 0,
+      "personal": 0,
+      "free": 485,
+      "unallocated": 0
+    }
+  },
+  "notes": [
+    "Twenty-five of the 510 working minutes on Friday are scheduled, all of it committed Mantel time.",
+    "No personal blocks or all-day items are scheduled for the day.",
+    "Two free windows, the longest 360 minutes from 09:00 to 15:00. RSVP statuses may still change before then."
+  ]
+}
